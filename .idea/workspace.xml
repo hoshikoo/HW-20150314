@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8697ef8a-8e6a-43a8-a482-609e8f8da5bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/textBasedGame.java" />
-    </list>
+    <list default="true" id="8697ef8a-8e6a-43a8-a482-609e8f8da5bc" name="Default" comment="" />
     <ignored path="HW_03-14.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="textBasedGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/textBasedGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24523161" vertical-offset="525" max-vertical-offset="1110">
-              <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.85831064" vertical-offset="525" max-vertical-offset="1110">
+              <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -404,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textBasedGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24523161" vertical-offset="525" max-vertical-offset="1110">
-          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.85831064" vertical-offset="525" max-vertical-offset="1110">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
