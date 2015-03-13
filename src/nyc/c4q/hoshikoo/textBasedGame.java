@@ -33,36 +33,38 @@ public class textBasedGame {
                 }
 
                 System.out.println("My choice is: "+myChoice);
+
+                boolean myRock = myChoice.equalsIgnoreCase("rock");
+                boolean myPaper = myChoice.equalsIgnoreCase("paper");
+                boolean myScissors = myChoice.equalsIgnoreCase("scissors");
+                //calcurate the total of wins
+                //calculate which is the winner
+                if ((rock&&myRock)||(paper&&myPaper)||(scissors&&myScissors)){
+                    System.out.println("We are even");
+                }
+                else if((rock&&myScissors)||(scissors||myPaper)||(paper||myRock)){
+                    System.out.println("You won");
+                    userWon++;
+                }
+                else if((rock&&myPaper)||(scissors||myRock)||(paper||myScissors)){
+                    System.out.println("You lost");
+                    myWon++;
+                }
+
                 System.out.println("we have "+ (4-i )+ " more times.  Please type your choice!");
 
             }else{
                 System.out.println("Your choice is wrong.  Please try again");
             }
-            boolean myRock = myChoice.equalsIgnoreCase("rock");
-            boolean myPaper = myChoice.equalsIgnoreCase("paper");
-            boolean myScissors = myChoice.equalsIgnoreCase("scissors");
 
-
-            //calcurate the total of wins
-            //calculate which is the winner
-            if ((rock&&myRock)||(paper&&myPaper)||(scissors&&myScissors)){
-                System.out.println("We are even");
-            }
-            else if((rock&&myScissors)||(scissors||myPaper)||(paper||myRock)){
-                System.out.println("You won");
-                userWon++;
-            }
-            else if((rock&&myPaper)||(scissors||myRock)||(paper||myScissors)){
-                System.out.println("You lost");
-                myWon++;
-            }
-
-        //System.out.print("You won "+userWon+" times and I won "+myWon+" times.  The winner is...");
-
-
-            //System.out.print(winner);
 
         }
-
+        String winner;
+        if (userWon>myWon){
+            winner = "You";
+        }else{
+            winner ="Me";
+        }
+        System.out.print("You won "+userWon+" times and I won "+myWon+" times.  The winner is..."+ winner);
     }
 }
