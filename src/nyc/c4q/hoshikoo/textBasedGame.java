@@ -18,8 +18,37 @@ public class textBasedGame {
             boolean paper = userChoice.equalsIgnoreCase("paper");
             boolean scissors = userChoice.equalsIgnoreCase("scissors");
 
-            String myChoice = null;
+            if (rock){
+                System.out.println("  _______ ");
+                System.out.println(" (____   '——-");
+                System.out.println("(_____)");
+                System.out.println("(_____)");
+                System.out.println("(____)");
+                System.out.println(" (____)__.——-");
+                System.out.println();
+            }else if(paper){
+                System.out.println("       _______");
+                System.out.println("  ____(____   '---");
+                System.out.println(" (______");
+                System.out.println("(_______");
+                System.out.println(" (_______");
+                System.out.println("   (__________.---");
+                System.out.println();
 
+            }else if (scissors){
+                System.out.println("       _______");
+                System.out.println("  ____(____   '---");
+                System.out.println(" (______");
+                System.out.println("(__________");
+                System.out.println("      (____)");
+                System.out.println("       (___)__.---");
+                System.out.println("");
+
+                System.out.println();
+
+            }
+
+            String myChoice = null;
 
             if (rock || paper  || scissors){
                 int number = new Random().nextInt(3);
@@ -68,11 +97,11 @@ public class textBasedGame {
 
                 }
                 else if((rock&&myScissors)||(scissors||myPaper)||(paper||myRock)){
-                    System.out.println("You won");
+                    System.out.println("***You won!***");
                     userWon++;
                 }
                 else if((rock&&myPaper)||(scissors||myRock)||(paper||myScissors)){
-                    System.out.println("You lost");
+                    System.out.println("***You lost!***");
                     myWon++;
                 }
 
