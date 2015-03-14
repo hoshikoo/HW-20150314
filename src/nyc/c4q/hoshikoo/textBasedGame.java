@@ -26,10 +26,34 @@ public class textBasedGame {
 
                 if (number == 0){
                     myChoice = "Rock";
+                    System.out.println("    _______");
+                    System.out.println("---'   ____)");
+                    System.out.println("      (_____)");
+                    System.out.println("      (_____)");
+                    System.out.println("      (____) ");
+                    System.out.println("---.__(___)");
+                    System.out.println();
+
                 }else if (number == 1){
                     myChoice = "Paper";
+                    System.out.println("    _______");
+                    System.out.println("---'   ____)____");
+                    System.out.println("          ______)");
+                    System.out.println("          _______)");
+                    System.out.println("         _______)");
+                    System.out.println("---.__________)");
+                    System.out.println();
+
+
                 }else if (number == 2){
                     myChoice = "Scissors";
+                    System.out.println("    _______");
+                    System.out.println("---'   ____)____");
+                    System.out.println("          ______)");
+                    System.out.println("       __________)");
+                    System.out.println("      (____)");
+                    System.out.println("---.__(___)");
+                    System.out.println();
                 }
 
                 System.out.println("My choice is: "+myChoice);
@@ -41,6 +65,7 @@ public class textBasedGame {
                 //calculate which is the winner
                 if ((rock&&myRock)||(paper&&myPaper)||(scissors&&myScissors)){
                     System.out.println("We are even");
+
                 }
                 else if((rock&&myScissors)||(scissors||myPaper)||(paper||myRock)){
                     System.out.println("You won");
