@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8697ef8a-8e6a-43a8-a482-609e8f8da5bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nyc/c4q/hoshikoo/textBasedGame.java" afterPath="$PROJECT_DIR$/src/nyc/c4q/hoshikoo/textBasedGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HW_03-14.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="textBasedGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nyc/c4q/hoshikoo/textBasedGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18478261" vertical-offset="491" max-vertical-offset="1905">
-              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            <state vertical-scroll-proportion="-5.929348" vertical-offset="1691" max-vertical-offset="1875">
+              <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -52,8 +51,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="399" />
-    <option name="y" value="181" />
+    <option name="x" value="394" />
+    <option name="y" value="52" />
     <option name="width" value="1146" />
     <option name="height" value="676" />
   </component>
@@ -305,8 +304,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="399" y="181" width="1146" height="676" extended-state="0" />
-    <editor active="false" />
+    <frame x="394" y="52" width="1146" height="676" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -361,8 +360,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/nyc/c4q/hoshikoo/textBasedGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18478261" vertical-offset="491" max-vertical-offset="1905">
-          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state vertical-scroll-proportion="-5.929348" vertical-offset="1691" max-vertical-offset="1875">
+          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
           <folding />
         </state>
       </provider>

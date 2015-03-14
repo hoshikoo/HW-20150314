@@ -42,8 +42,6 @@ public class textBasedGame {
                 System.out.println("(__________");
                 System.out.println("      (____)");
                 System.out.println("       (___)__.---");
-                System.out.println("");
-
                 System.out.println();
 
             }
