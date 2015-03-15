@@ -9,9 +9,15 @@ public class textBasedGame {
         Scanner input = new Scanner(System.in);
         int userWon=0;
         int myWon=0;
-        System.out.print("Let's play Rock Paper Scissors!  We will try 5 times.  Please type your choice!");
-        for (int i = 0; i<5; i=i+1){
+        System.out.println("What is your name?");
+        String userName = input.nextLine();
+        System.out.println("Hello, "+userName+".  Let's play Rock Paper Scissors!");
+        System.out.println("Whoever wins 3 times first will win the game.\nPlease type your choice!");
 
+
+
+        for (int count = 0; count<10; count=count+1){
+            //System.out.println(count);
             String userChoice = input.next();
 
             boolean rock = userChoice.equalsIgnoreCase("rock");
@@ -88,35 +94,50 @@ public class textBasedGame {
                 boolean myRock = myChoice.equalsIgnoreCase("rock");
                 boolean myPaper = myChoice.equalsIgnoreCase("paper");
                 boolean myScissors = myChoice.equalsIgnoreCase("scissors");
-                //calcurate the total of wins
+                //count the total of wins
                 //calculate which is the winner
                 if ((rock&&myRock)||(paper&&myPaper)||(scissors&&myScissors)){
-                    System.out.println("We are even");
-
+                    System.out.println("***We are even***");
+                    count--;
                 }
-                else if((rock&&myScissors)||(scissors||myPaper)||(paper||myRock)){
+                else if((rock&&myScissors)||(scissors&&myPaper)||(paper&&myRock)){
                     System.out.println("***You won!***");
                     userWon++;
                 }
-                else if((rock&&myPaper)||(scissors||myRock)||(paper||myScissors)){
+                else if((rock&&myPaper)||(scissors&&myRock)||(paper&&myScissors)){
                     System.out.println("***You lost!***");
                     myWon++;
                 }
-
-                System.out.println("we have "+ (4-i )+ " more times.  Please type your choice!");
+                if ((userWon >= 3) || (myWon>=3))
+                    break;
+                System.out.println("Your Score: "+userWon+", My Score: "+myWon+ ".  Please type your choice!");
 
             }else{
                 System.out.println("Your choice is wrong.  Please try again");
             }
 
+        }
 
-        }
-        String winner;
+        String wonOrLost;
         if (userWon>myWon){
-            winner = "You";
+            wonOrLost = "　　　　　　　　 ★\n" +
+                        "　　　　 　　 [~~~] +::.゜ ゜ ゜゜｡･｡　.　.*\n" +
+                        "　　　 ∧ ∧　 [~~~~~]　　Congratulations, "+userName + ", you won!！\n" +
+                        "　　　(*ﾟーﾟ)[~~~~~~~] 　　　 ゜::.゜ ゜゜゜｡･｡\n" +
+                        "　　　 ﾉ　つ━━━━━\n" +
+                        "　　～　 ﾉ\n" +
+                        "((　　(/ J";
         }else{
-            winner ="Me";
+            wonOrLost ="　　　　　　　.o゜*。o\n" +
+                       "　　　　　　,／⌒ヽ*゜*\n" +
+                       "　  ∧_∧　／ヽ 　 　）｡*o\n" +
+                       "　(*ﾟーﾟ)丿゛￣￣' ゜\n" +
+                       "ノ/　 /   Sorry, "+userName+ ", you lost.\n" +
+                       "ノ￣ゝ\n";
         }
-        System.out.print("You won "+userWon+" times and I won "+myWon+" times.  The winner is..."+ winner);
+        System.out.println("Your Score: "+userWon+", My Score: "+myWon);
+        System.out.println();
+        System.out.println(wonOrLost);
+
     }
 }
