@@ -15,14 +15,17 @@ public class textBasedGame {
         System.out.println("Whoever wins 3 times first will win the game.\nPlease type your choice!");
 
 
-
-        for (int count = 0; count<10; count=count+1){
+        int count = 0;
+        while ((userWon <= 2) && (myWon<=2)){
+            count=count+1;
             //System.out.println(count);
             String userChoice = input.next();
 
             boolean rock = userChoice.equalsIgnoreCase("rock");
             boolean paper = userChoice.equalsIgnoreCase("paper");
             boolean scissors = userChoice.equalsIgnoreCase("scissors");
+
+            System.out.println("Please type your choice!");
 
             if (rock){
                 System.out.println("  _______ ");
@@ -108,9 +111,8 @@ public class textBasedGame {
                     System.out.println("***You lost!***");
                     myWon++;
                 }
-                if ((userWon >= 3) || (myWon>=3))
-                    break;
-                System.out.println("Your Score: "+userWon+", My Score: "+myWon+ ".  Please type your choice!");
+
+                System.out.println("Your Score: "+userWon+", My Score: "+myWon+ ".");
 
             }else{
                 System.out.println("Your choice is wrong.  Please try again");
@@ -118,8 +120,8 @@ public class textBasedGame {
 
         }
 
-        String wonOrLost;
-        if (userWon>myWon){
+        String wonOrLost=null;
+        if (userWon >= 3){
             wonOrLost = "　　　　　　　　 ★\n" +
                         "　　　　 　　 [~~~] +::.゜ ゜ ゜゜｡･｡　.　.*\n" +
                         "　　　 ∧ ∧　 [~~~~~]　　Congratulations, "+userName + ", you won!！\n" +
@@ -127,15 +129,15 @@ public class textBasedGame {
                         "　　　 ﾉ　つ━━━━━\n" +
                         "　　～　 ﾉ\n" +
                         "((　　(/ J";
-        }else{
+        }else if (myWon>=3){
             wonOrLost ="　　　　　　　.o゜*。o\n" +
                        "　　　　　　,／⌒ヽ*゜*\n" +
                        "　  ∧_∧　／ヽ 　 　）｡*o\n" +
                        "　(*ﾟーﾟ)丿゛￣￣' ゜\n" +
                        "ノ/　 /   Sorry, "+userName+ ", you lost.\n" +
-                       "ノ￣ゝ\n";
+                       "ノ￣ゝ";
         }
-        System.out.println("Your Score: "+userWon+", My Score: "+myWon);
+        //System.out.println("Your Score: "+userWon+", My Score: "+myWon);
         System.out.println();
         System.out.println(wonOrLost);
 
